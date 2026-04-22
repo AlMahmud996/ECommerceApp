@@ -1,0 +1,30 @@
+@model ECommerceApp.Models.Product
+
+<h2>Add New Product</h2>
+
+<form method="post">
+    <div>
+        <label>Name</label><br/>
+        <input asp-for="Name" />
+    </div>
+    <br/>
+    <div>
+        <label>Description</label><br/>
+        <input asp-for="Description" />
+    </div>
+    <br/>
+    <div>
+        <label>Price</label><br/>
+        <input asp-for="Price" />
+    </div>
+    <br/>
+    <div>
+        <label>Stock</label><br/>
+        <input asp-for="Stock" />
+    </div>
+    <br/>
+    <button type="submit">Add Product</button>
+</form>
+
+<br/>
+<a href="/Products">Back to Products</a>
