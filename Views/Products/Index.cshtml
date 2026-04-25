@@ -2,6 +2,8 @@
 
 <h2>Our Products</h2>
 
+<a href="/Products/Create" style="display:inline-block; margin-bottom:16px; padding:8px 16px; background:#333; color:white; border-radius:6px; text-decoration:none;">+ Add New Product</a>
+
 @if (Model.Count == 0)
 {
     <p>No products yet.</p>
@@ -15,6 +17,8 @@ else
                 <h4>@product.Name</h4>
                 <p>@product.Description</p>
                 <strong>$@product.Price</strong>
+                <br/><br/>
+                <a href="/Cart/AddToCart/@product.Id" style="display:block; text-align:center; padding:8px; background:#28a745; color:white; border-radius:6px; text-decoration:none;">Add to Cart</a>
             </div>
         }
     </div>

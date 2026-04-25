@@ -1,0 +1,44 @@
+<h2>Checkout</h2>
+
+<h3>Order Summary</h3>
+<table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+    <tr style="background:#f5f5f5;">
+        <th style="padding:10px; text-align:left;">Product</th>
+        <th style="padding:10px;">Quantity</th>
+        <th style="padding:10px;">Price</th>
+    </tr>
+    @foreach (var item in ViewBag.CartItems)
+    {
+        <tr style="border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">@item.Product.Name</td>
+            <td style="padding:10px; text-align:center;">@item.Quantity</td>
+            <td style="padding:10px; text-align:center;">$@(item.Product.Price * item.Quantity)</td>
+        </tr>
+    }
+</table>
+<h3>Total: $@ViewBag.Total</h3>
+
+<hr/>
+
+<h3>Your Details</h3>
+<form method="post" action="/Order/PlaceOrder">
+    <div>
+        <label>Full Name</label><br/>
+        <input name="customerName" style="width:300px; padding:8px;" required />
+    </div>
+    <br/>
+    <div>
+        <label>Email</label><br/>
+        <input name="customerEmail" type="email" style="width:300px; padding:8px;" required />
+    </div>
+    <br/>
+    <div>
+        <label>Delivery Address</label><br/>
+        <textarea name="address" style="width:300px; padding:8px;" rows="3" required></textarea>
+    </div>
+    <br/>
+    <button type="submit" style="padding:10px 24px; background:#28a745; color:white; border:none; border-radius:6px; font-size:16px; cursor:pointer;">
+        Place Order
+    </button>
+    <a href="/Cart" style="margin-left:16px;">Back to Cart</a>
+</form>

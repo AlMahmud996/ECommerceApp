@@ -269,3 +269,4 @@ D:\Fall 25-26\.NET PROJECT\VS Code Activity\ECommerceApp\bin\Debug\net10.0\tr\Mi
 D:\Fall 25-26\.NET PROJECT\VS Code Activity\ECommerceApp\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Fall 25-26\.NET PROJECT\VS Code Activity\ECommerceApp\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Fall 25-26\.NET PROJECT\VS Code Activity\ECommerceApp\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+D:\Fall 25-26\.NET PROJECT\VS Code Activity\ECommerceApp\obj\Debug\net10.0\ECommerceApp.sourcelink.json
